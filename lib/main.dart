@@ -16,7 +16,7 @@ class CoolApp extends StatefulWidget {
 //}
 //}
 
-class CoolAppState extends State<CoolApp> with SingleTickerProviderStateMixin {
+class CoolAppState extends State<CoolApp>{
 
   @override
   Widget build(BuildContext context) {
