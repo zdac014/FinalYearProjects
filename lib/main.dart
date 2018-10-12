@@ -54,6 +54,16 @@ class CoolAppState extends State<CoolApp>{
                 ),
               ),
             ),
+            new ListTile(
+              title: new Text("Recipes Under £10"),
+              trailing: new Icon(Icons.arrow_right),
+              onTap: () {},
+            ),
+            new ListTile(
+              title: new Text("Low Calorie Recipes"),
+              trailing: new Icon(Icons.arrow_right),
+              onTap: () {},
+            ),
           ],
         ),
       ),
