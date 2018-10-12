@@ -40,6 +40,23 @@ class CoolAppState extends State<CoolApp>{
             ),],
         ),
       ),
+      drawer: new Drawer(
+        child: new ListView(
+          children: <Widget>[
+            new UserAccountsDrawerHeader(
+              accountName: new Text("Different types of Recipes"),
+              accountEmail: new Text("Choose:"),
+              decoration: new BoxDecoration(
+                image: new DecorationImage(
+                  fit: BoxFit.fill,
+                  image: new AssetImage(
+                      "assets/sidebar.jpg"),
+                ),
+              ),
+            ),
+          ],
+        ),
+      ),
     );
   }
 }
