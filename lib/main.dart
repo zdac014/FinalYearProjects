@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import './sidebarpages.dart';
 
 void main() => runApp(new MaterialApp(home: new CoolApp()));
 
@@ -57,12 +58,35 @@ class CoolAppState extends State<CoolApp>{
             new ListTile(
               title: new Text("Recipes Under £10"),
               trailing: new Icon(Icons.arrow_right),
-              onTap: () {},
+              onTap: () => Navigator.of(context).push(
+                    new MaterialPageRoute(
+                      builder: (BuildContext context) => new PageOne(
+                          'RECIPIES UNDER £10'
+                          ),),),
             ),
             new ListTile(
               title: new Text("Low Calorie Recipes"),
               trailing: new Icon(Icons.arrow_right),
-              onTap: () {},
+              onTap: () => Navigator.of(context).push(new MaterialPageRoute(
+                  builder: (BuildContext context) => new PageOne(
+                      'LOW CALORIE RECIPES'
+                      ))),
+            ),
+            new ListTile(
+              title: new Text("Easy to Cook Recipes"),
+              trailing: new Icon(Icons.arrow_right),
+              onTap: () => Navigator.of(context).push(new MaterialPageRoute(
+                  builder: (BuildContext context) => new PageOne(
+                      'QUICK RECIPES'
+                      ))),
+            ),
+            new ListTile(
+              title: new Text("Easy to Cook Recipes"),
+              trailing: new Icon(Icons.arrow_right),
+              onTap: () => Navigator.of(context).push(new MaterialPageRoute(
+                  builder: (BuildContext context) => new PageOne(
+                      'QUICK RECIPES'
+                      ))),
             ),
           ],
         ),
